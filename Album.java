@@ -1,10 +1,25 @@
-public class Album{
+public class Album {
     public String title;
     public String artist;
     private int numTracks;
-    private double recordTime;
+    private double playTime; //in minutes
 
-    public Album(){
+    public Album(String title, String artist, int tracks, double time){
+        this.title = title;
+        this.artist = artist;
+        numTracks = tracks;
+        playTime = time;
+    }
 
+
+    public String getTitle(){
+        return title;
+    }
+
+    public String toString(){
+        String result = "";
+        result += title + ", by " + artist + " | " + numTracks + " tracks";
+        result += ", Time: " + playTime + "min";
+        return result;
     }
 }
