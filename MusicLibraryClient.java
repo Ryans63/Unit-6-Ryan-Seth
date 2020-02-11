@@ -35,9 +35,9 @@ public class MusicLibraryClient {
         System.out.println(myLibrary);
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++");
-        System.out.println("The Selection Sort");
+        System.out.println("Test Insertion Sort");
 
-        myLibrary.sortByTitle();
+        myLibrary.sortByArtist();
 
         myLibrary.remove(1);
         myLibrary.add(a3);

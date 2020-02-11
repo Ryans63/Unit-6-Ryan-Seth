@@ -67,15 +67,13 @@ public class MusicLibrary {
             return null;
         }
     }
-
-
-
     public void sortByTitle(){
         Album temp;
         int min;
         for(int i = 0; i < library.length; i++){
             min = i;
             for(int scan = i+1; scan < library.length; scan++){
+                if(library[scan] != null && library[i] != null)
                 if(library[scan].getTitle().compareTo(library[min].getTitle() < 0)){
                     min = scan;
                 }
@@ -85,5 +83,35 @@ public class MusicLibrary {
             library[i] = temp;
         }
     }
+    public void sortByArtist(){
+        for(int i = 1; i < library.length; i++){
+            Album key = library[i];
+            int position = i;
+
+            while (position > 0 && library[position - 1].getArtist().compareTo(key.getArtist()) > 0){
+                library[position] = library[position - 1]
+                position--;
+            }
+            library[position] = key;;
+
+        }
+    }
+    public int binarySearchByTitle(String target) {
+        int low = 0, high = library.length-1, middle = (low + high)/2;
+
+        while (library[middle].getTitle().equals(target) && low <= high){
+            if (target.compareTo(library[middle].getTitle()) < 0)
+                high = middle - 1;
+            else
+                low = middle + 1;
+            middle = (low + high)/2;
+        }
+
+        if (library[middle] == target)
+            return middle;
+        else
+            return -1;
+    }
+
 }
 
