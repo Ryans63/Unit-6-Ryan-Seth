@@ -7,12 +7,32 @@
          MyArray2DExplorer exp = new MyArray2DExplorer();
 
 
-         public int minRow ( int[][] nums, int row)
-         for (int i = 0; i <= nums.)
+         public int minRow ( int[][] nums, int row){
+             for (int r = 0; r <= mats.length; r++)
+                 for (int c = 0; c <= mat[r].length; c++)
+                     if (c < r)
+                         return mat[r][c] ;
+         }
 
+             public int[] colMaxs ( int[][] matrix){
+             for (int r = 0; r <= mats.length; r++)
+                 for (int c = 0; c <= mat[r].length; c++)
+                     if (c > r)
+                         return mat[c][r] ;
+         }
 
-             public int[] colMaxs ( int[][] matrix)
+         public int[] allRowSums(int[][] data){
+             int sum;
+             for (int r = 0; r <= mats.length; r++)
+                 for (int c = 0; c <= mat[r].length; c++)
+                   for(sum += mat[r][c])
+                       return sum;
+         }
 
+         public double[] averageCol(int[][] nums){
+             for (int r = 0; r <= mats.length; r++)
+                 for (int c = 0; c <= mat[r].length; c++)
+         }
 
          System.out.println("Test evenRow: \n Row w/ odd, Expecting: false \n Actual: " + exp.evenRow(array, 0));
          System.out.println("Test evenRow: \n Row w/o odd, Expecting: true \n Actual: " + exp.evenRow(array, 2));
