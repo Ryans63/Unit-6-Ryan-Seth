@@ -6,7 +6,7 @@ public class Deck{
     public Deck(){
         deck = new ArrayList<>();
         for(String rank; Card.RANK){
-
+            
         }
     }
 }

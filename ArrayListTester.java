@@ -18,7 +18,11 @@ public class ArrayListTester{
         System.out.println();
 
         public int countLetters(ArrayList list) {
-
+            int sum = 0;
+            for(int i = 0; i < list.size(); i++){
+                sum += list.get(i).length;
+            }
+            return sum;
         }
 
             ArrayList<String> words = new ArrayList<>(Arrays.asList("this", "is", "a", "list", "of", "words"));
@@ -27,6 +31,10 @@ public class ArrayListTester{
         System.out.println("Expected: 18 \n Actual: " + countLetters(words));
 
         System.out.println();
+
+
+
+
 
         System.out.println("Test keyPosition: find a 1");
         System.out.println(nums);
