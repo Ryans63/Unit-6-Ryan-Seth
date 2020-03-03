@@ -11,5 +11,19 @@ public class Deck{
             }
         }
     }
-    public Arraylist<Card>;
+    public Arraylist<Card> getDeck(){
+        return deck;
+    }
+
+    public void shuffle(){
+        Collection.shuffle(deck);
+    }
+
+    public String toString(){
+        return "Deck(" + ")";
+    }
+    public static void main(String[]args){
+        Deck d = new Deck();
+        System.out.println(d.getDeck);
+    }
 }
