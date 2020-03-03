@@ -5,8 +5,11 @@ public class Deck{
 
     public Deck(){
         deck = new ArrayList<>();
-        for(String rank; Card.RANK){
-            
+        for(String rank; Card.RANK) {
+            for (String suit; Card.SUIT) {
+                deck.add(new Card(rank, suit));
+            }
         }
     }
+    public Arraylist<Card>;
 }
