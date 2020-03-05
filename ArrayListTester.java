@@ -33,9 +33,12 @@ public class ArrayListTester{
         System.out.println();
 
 
-
-
-
+        public findMin(){
+            for(int i = 0; i < list.size(); i++){
+                
+            }
+        }
+        
         System.out.println("Test keyPosition: find a 1");
         System.out.println(nums);
         System.out.println("Expected: 2 \n Actual: " + findPosition(1, nums));
