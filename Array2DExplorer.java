@@ -30,10 +30,22 @@
          }
 
          public double[] averageCol(int[][] nums){
+                 int sum = 0;
              for (int r = 0; r <= mats.length; r++)
                  for (int c = 0; c <= mat[r].length; c++)
+                   if(int [i] <= mats.length){
+                     sum++;
+                   }
+                 return sum;
          }
-
+      
+      public static int biggestRow(int[][] nums){
+       for (int r = 0; r <= mats.length; r++)
+                 for (int c = 0; c <= mat[r].length; c++)
+                  if(mat[r][c] > mats.length)
+                   return r;
+      }
+      
          System.out.println("Test evenRow: \n Row w/ odd, Expecting: false \n Actual: " + exp.evenRow(array, 0));
          System.out.println("Test evenRow: \n Row w/o odd, Expecting: true \n Actual: " + exp.evenRow(array, 2));
 

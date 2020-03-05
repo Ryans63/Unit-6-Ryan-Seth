@@ -33,19 +33,35 @@ public class ArrayListTester{
         System.out.println();
 
 
-
-
-
+        public findPosition(keyValue, list){
+            int keyValue = 3;
+            for(int i = 0; i < list.size(); i++){
+                if(int[i] = keyValue)
+                    return keyValue;
+                else
+                    return -1;
+            }
+        }
+        
         System.out.println("Test keyPosition: find a 1");
         System.out.println(nums);
         System.out.println("Expected: 2 \n Actual: " + findPosition(1, nums));
 
         System.out.println();
+        
+        public parseIntoArrayList(){
+            for(int i = 0; i < list.size(); i++){
+                return int[i] + " "
+            }    
+        }
 
         System.out.println("Test parse into array");
         System.out.println("Expected: [W, e, s, t, , L, i, n, n] \n Actual: " + parseIntoArrayList("West Linn"));
 
         System.out.println();
+        
+        public findMin
+        
 
         System.out.println("Test FindMin for Personobjects");
         ArrayList<Person> people = new ArrayList<>(Arrays.asList(new Person(32, "Abe"),
