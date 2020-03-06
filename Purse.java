@@ -18,7 +18,7 @@ public class Purse {
     // returns the number of coins in the Purse that matches aCoin
 // (both myName & myValue)
     public int count(Coin aCoin) {
-        //COMPLETE THIS METHOD
+        
     }
 
 // returns the name of the Coin in the Purse that has the smallest value
