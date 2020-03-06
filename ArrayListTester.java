@@ -60,8 +60,13 @@ public class ArrayListTester{
 
         System.out.println();
         
-        public findMin
-        
+        public findMin(){
+         for(int i = 0; i < list.size(); i++){
+             if(int[i] = myAge)
+                    int [i] = this.name
+                 return Name;
+         }
+        }
 
         System.out.println("Test FindMin for Personobjects");
         ArrayList<Person> people = new ArrayList<>(Arrays.asList(new Person(32, "Abe"),
@@ -70,6 +75,59 @@ public class ArrayListTester{
         System.out.println("Expected: BETTY \n Actual: " + findMin(people));
 
         System.out.println();
+        public class Coin { 
+ 
+private double myValue; 
+private String myName; 
+ 
+public Coin(double value, String name) { 
+myValue = value; 
+myName = name; 
+} 
+ 
+public double getValue() { 
+return myValue; 
+} 
+ 
+public String getName() { 
+return myName;
+} 
+ 
+// returns true if this coin is equal to aCoin, 
+// which means the name and the value are both equal 
+public boolean equals(Coin aCoin) { 
+    if (this.coin = aCoin)
+        return true;
+}
+} 
+
+        public class Purse {
+    private ArrayList coins;
+
+    public Purse() {
+        coins = new ArrayList();
+    }
+
+    // adds aCoin to the purse
+    public void add(Coin aCoin) {
+        coins.add(aCoin);
+    }
+
+    // returns total value of all coins in purse
+    public double getTotal() {
+        return total;
+    }
+
+    // returns the number of coins in the Purse that matches aCoin
+// (both myName & myValue)
+    public int count(Coin aCoin) {
+        if(myName = myValue)
+            return Coin;
+        if(Coin = aCoin)
+            return aCoin;
+    }
+
+        
 
         System.out.println("Purse Test:");
         Purse myPurse = new Purse();
